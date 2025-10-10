@@ -1,6 +1,6 @@
 # To-Do List
 
-![Cover](to_do_list.png)
+![](image.png)
 
 - Duration:  27/9/2025 - 29/9/2025
 

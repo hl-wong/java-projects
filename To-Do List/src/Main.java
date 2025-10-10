@@ -23,10 +23,16 @@ public class Main {
                     case 1:
                         // Add task
                         System.out.print("\nPlease enter the task name: ");
-                        String task_name = input.nextLine();
+                        String task_name = input.nextLine().trim();
 
-                        task = new Task(task_name, false, tasks);
-                        task.addTask(task);
+                        if (task_name != "") {
+                            task = new Task(task_name, false, tasks);
+                            task.addTask(task);
+                        }
+                        else {
+                            System.out.println("Task name cannot be empty\n");
+                        }
+
                         break;
                     case 2:
                         // Update task
